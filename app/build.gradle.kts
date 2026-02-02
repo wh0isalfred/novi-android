@@ -56,4 +56,10 @@ dependencies {
     androidTestImplementation(libs.androidx.compose.ui.test.junit4)
     debugImplementation(libs.androidx.compose.ui.tooling)
     debugImplementation(libs.androidx.compose.ui.test.manifest)
+    implementation("androidx.compose.material:material-icons-extended:<version>")
+    implementation("io.github.supabase:postgrest-kt:3.0.0") // For database
+    implementation("io.github.supabase:auth-kt:3.0.0")       // For Login/Signup
+
+    // Ktor (Required by Supabase for networking)
+    implementation("io.ktor:ktor-client-android:3.0.0")
 }
